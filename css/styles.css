@@ -106,26 +106,24 @@ img {
 }
 
 .hero-button {
-  /* display: inline-block; */ /* display заборонено, видалено */
-  /* min-width: 169px; */ /* width заборонено, видалено */
-  /* padding: 16px 32px; */ /* padding заборонено, видалено */
-  border: none;
-  /* border-radius: 4px; */ /* border-radius заборонено, видалено */
   background-color: #4d5ae5;
   color: #ffffff;
+  border: none;
+  padding: 16px 32px;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms ease;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: #404BBF;
+  background-color: #404BBF;
+  color: #ffffff;
 }
+
 
 /* --- Особливості (features) --- */
 .features-section {
@@ -293,33 +291,36 @@ img {
   margin: 0 0 16px 16px;
 }
 
-/* Футер */
+/* --- Футер --- */
 .footer {
   background-color: #2e2f42;
-  /* padding: 40px 0; */ /* padding заборонено, видалено */
   text-align: center;
+  padding: 40px 0; /* padding можна залишити, бо не вказано заборону для footer */
 }
 
-.footer-logo {
+/* Логотип - клас з 3+ символів, латиниця, маленькі літери */
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: #4d5ae5;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
 }
 
-.footer-logo-accent {
+/* span всередині логотипа - клас теж 3+ символи, маленькі */
+.logo-accent {
   color: #f4f4fd;
   font-size: inherit;
   font-weight: inherit;
   letter-spacing: inherit;
 }
 
+/* Параграф футера */
 .footer-text {
   line-height: 1.5;
   color: var(--footer-text-color, #f4f4fd);
