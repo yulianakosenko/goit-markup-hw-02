@@ -4,8 +4,8 @@ body {
   font-weight: 400;
   color: #434455;
   background-color: #ffffff;
-  font-size: 16px;          /* С – 9 */
-  line-height: 1.5;         /* С – 10 */
+  font-size: 16px;          
+  line-height: 1.5;         
   margin: 0;
 }
 
@@ -21,11 +21,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;          /* С – 11 */
+  color: inherit;          
 }
 
 img {
-  display: block;
+  /*display: block;*/
   max-width: 100%;
   height: auto;
 }
@@ -304,11 +304,11 @@ img {
   margin: 0 0 16px 16px;
 }
 
-/* --- Футер --- */
+
 /* Футер */
 .footer {
   background-color: #2e2f42;
-  padding: 40px 0;
+  /*padding: 40px 0;*/
   text-align: center;
 }
 
@@ -321,7 +321,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: inline-block;
+  /*display: inline-block;*/
   margin-bottom: 12px;
 }
 
