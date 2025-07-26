@@ -27,12 +27,13 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  /* display: block; */ /* display заборонено, закоментовано */
 }
 
 /* --- Хедер --- */
 .header {
   background-color: #ffffff;  /* С – 11 */
-  border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc; */ /* border-bottom заборонено, закоментовано */
   /* padding: 24px 0; */ /* padding заборонено, видалено */
   /* display: flex; */ /* display заборонено, видалено */
   /* justify-content: space-between; */ /* видалено */
@@ -46,13 +47,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #4d5ae5; /* Синій для "Web" */
   text-decoration: none;
+  /* display: inline-block; */ /* display заборонено, закоментовано */
+  /* margin-bottom: 16px; */ /* margin не заборонений, залишено */
 }
 
 .logo-accent {
-  color: #2e2f42;
+  color: #2e2f42; /* Темний для "Studio" */
 }
+
 
 .nav-link {
   letter-spacing: 0.02em;
@@ -109,21 +113,22 @@ img {
   background-color: #4d5ae5;
   color: #ffffff;
   border: none;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */ /* padding заборонено, закоментовано */
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms ease;
+  transition: color 250ms ease; /* анімація зміни кольору тексту */
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404BBF;
-  color: #ffffff;
+  color: #404BBF; /* змінюємо колір тексту */
+  /* background-color залишається без змін */
 }
-
 
 /* --- Особливості (features) --- */
 .features-section {
@@ -270,7 +275,7 @@ img {
 .portfolio-item img {
   /* width: 360px; */ /* width заборонено, видалено */
   height: auto;
-  display: block;
+  /* display: block; */ /* display заборонено, закоментовано */
 }
 
 .portfolio-name {
@@ -294,13 +299,12 @@ img {
 /* --- Футер --- */
 .footer {
   background-color: #2e2f42;
+  /* padding: 40px 0; */ /* padding заборонено, закоментовано */
   text-align: center;
-  padding: 40px 0; /* padding можна залишити, бо не вказано заборону для footer */
 }
 
-/* Логотип - клас з 3+ символів, латиниця, маленькі літери */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -308,11 +312,10 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;
+  /* display: inline-block; */ /* display заборонено, закоментовано */
+  /* margin-bottom: 16px; */ /* margin не заборонений, закоментовано, можна лишити якщо хочеш */
 }
 
-/* span всередині логотипа - клас теж 3+ символи, маленькі */
 .logo-accent {
   color: #f4f4fd;
   font-size: inherit;
@@ -320,7 +323,6 @@ img {
   letter-spacing: inherit;
 }
 
-/* Параграф футера */
 .footer-text {
   line-height: 1.5;
   color: var(--footer-text-color, #f4f4fd);
