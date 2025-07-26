@@ -41,33 +41,27 @@ img {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;  /* С – 9, С – 12 */
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 18px;                    /* С – 9 */
-  line-height: 1.17;                  /* С – 10 */
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;                    /* С – 11 */
-  cursor: pointer;                   /* С – 13 */
+  color: #4d5ae5;
+  text-decoration: none;
 }
 
-.logo::after {
-  content: 'Studio';
+.logo-accent {
   color: #2e2f42;
-  margin-left: 4px;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
 }
 
 .nav-link {
-  font-weight: 500;                  /* С – 12 */
-  color: #2e2f42;                   /* С – 11 */
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  font-weight: 500;
   padding: 24px 0;
-  transition: color 250ms ease-in-out;
-  cursor: pointer;                  /* С – 13 */
+  display: inline-block;
 }
 
 .nav-link:hover,
@@ -75,17 +69,18 @@ img {
   color: #404bbf;
 }
 
-.contact-list {
-  display: flex;
-  gap: 40px;
+.current {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contact-link {
-  font-size: 16px;                  /* С – 9 */
-  line-height: 1.5;                 /* С – 10 */
-  color: #434455;                   /* С – 11 */
-  transition: color 250ms ease-in-out;
-  cursor: pointer;                  /* С – 13 */
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
 }
 
 .contact-link:hover,
@@ -95,31 +90,37 @@ img {
 
 /* --- Герой секція --- */
 .hero {
-  background-color: #2e2f42;       /* С – 11 */
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #2e2f42;
+  padding: 188px 0;
   text-align: center;
 }
 
 .hero-title {
-  font-size: 56px;                 /* С – 9 */
-  line-height: 1.07;               /* С – 10 */
-  color: #ffffff;                  /* С – 11 */
-  margin-bottom: 48px;
   max-width: 496px;
+  margin: 0 auto 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .hero-button {
-  background-color: #4d5ae5;       /* С – 11 */
-  color: #ffffff;
+  display: inline-block;
+  min-width: 169px;
   padding: 16px 32px;
-  font-size: 16px;                 /* С – 9 */
   border: none;
   border-radius: 4px;
-  cursor: pointer;                 /* С – 13 */
-  transition: background-color 250ms ease-in-out;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms ease;
 }
 
 .hero-button:hover,
@@ -127,148 +128,217 @@ img {
   background-color: #404bbf;
 }
 
+
 /* --- Особливості (features) --- */
-.features {
+.features-section {
   padding: 120px 0;
 }
 
-.feature-list {
-  display: flex;
-  gap: 24px;
+.features-title {
+  font-size: 36px; /* або інший розмір, якщо потрібен заголовок */
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
-.feature-item {
-  flex-basis: calc((100% - 72px) / 4);
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;        /* можна в флекс, якщо макет передбачає горизонтальне розташування */
+  gap: 24px;
+  flex-wrap: wrap;      /* щоб не ламати верстку */
+  justify-content: center;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4); /* 4 елементи в ряд з відступами */
 }
 
 .feature-title {
-  font-size: 20px;                /* С – 9 */
-  font-weight: 500;               /* С – 12 */
-  color: #2e2f42;                /* С – 11 */
+  font-weight: 500;      /* жирність */
+  font-size: 20px;       /* розмір шрифту */
+  line-height: 1.2;      /* міжрядковий інтервал */
+  letter-spacing: 0.02em;/* відстань між літерами */
+  color: #2e2f42;        /* колір тексту */
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 8px;
 }
 
 .feature-text {
-  font-size: 16px;                /* С – 9 */
-  color: #434455;                /* С – 11 */
+  font-size: 16px;       /* розмір тексту */
+  line-height: 1.5;      /* міжрядковий інтервал */
+  letter-spacing: 0.02em;/* відстань між літерами */
+  color: #434455;        /* колір тексту */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 /* --- Команда (team) --- */
 .team {
-  background-color: #f4f4fd;      /* С – 11 */
+  background-color: #f4f4fd;
   padding: 120px 0;
 }
 
 .team-title {
-  font-size: 36px;                /* С – 9 */
-  line-height: 1.11;              /* С – 10 */
-  color: #2e2f42;                /* С – 11 */
+  font-weight: 500;          /* жирність як в секції 2 */
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
   text-align: center;
   margin-bottom: 72px;
 }
 
+/* Список */
 .team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 24px;
+  justify-content: center; /* за потребою */
 }
 
+/* Пункти списку */
 .team-item {
-  background-color: #ffffff;      /* С – 11 */
-  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+  border-radius: 4px; /* можна залишити, якщо дозволено */
   box-shadow:
     0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
-  overflow: hidden;
   text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px; /* або за потребою */
+  width: 264px; /* або адаптивно */
 }
 
+/* Заголовки всередині пунктів (ім'я, клас як в секції 2) */
 .team-name {
-  font-size: 20px;                /* С – 9 */
-  font-weight: 500;               /* С – 12 */
-  color: #2e2f42;                /* С – 11 */
-  margin: 32px 0 8px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;       /* повторюємо як у другої секції */
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 32px 0 8px;
+  text-transform: none; /* за потребою */
 }
 
+/* Параграфи всередині пунктів (роль, клас як у другій секції) */
 .team-role {
-  font-size: 16px;                /* С – 9 */
-  color: #434455;                /* С – 11 */
-  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
 }
 
 /* --- Портфоліо --- */
+/* Секція портфоліо */
 .portfolio {
+  background-color: #ffffff; /* або інший фон секції, якщо треба */
   padding: 120px 0;
-  background-color: #ffffff;      /* С – 11 */
 }
 
+/* Заголовок секції - перевикористання класу з 3-ї секції */
 .portfolio-title {
-  font-size: 36px;                /* С – 9 */
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 
+/* Список портфоліо */
 .portfolio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   justify-items: center;
 }
 
+/* Пункт списку портфоліо */
 .portfolio-item {
+  background-color: #ffffff;
   width: 360px;
-  height: 420px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  background-color: #ffffff;      /* С – 11 */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
+/* Картинка */
+.portfolio-item img {
+  width: 360px; /* фіксована ширина */
+  height: auto;
+  display: block;
+}
+
+/* Заголовок h3 в пункті */
 .portfolio-name {
-  font-size: 20px;                /* С – 9 */
-  font-weight: 500;               /* С – 12 */
-  margin: 16px 0 8px 0;
-  color: #2e2f42;                /* С – 11 */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 16px 0 8px 16px;
+  text-transform: none; /* якщо потрібно */
 }
 
+/* Параграф в пункті */
 .portfolio-role {
-  font-size: 16px;                /* С – 9 */
-  color: #434455;                /* С – 11 */
-  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0 0 16px 16px;
 }
 
 /* --- Футер --- */
+/* Футер */
 .footer {
-  background-color: #2e2f42;       /* С – 11 */
-  padding: 100px 0;
+  background-color: #2e2f42;
+  padding: 40px 0;
   text-align: center;
 }
 
+/* Логотип футера (перевикористовуємо клас лого з хедера) */
 .footer-logo {
-  font-family: 'Raleway', sans-serif; /* С – 9, С – 12 */
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;                 /* С – 11 */
+  text-transform: uppercase;
+  color: #4d5ae5;
   display: inline-block;
-  margin-bottom: 16px;
-  cursor: pointer;               /* С – 13 */
+  margin-bottom: 12px;
 }
 
-.footer-logo::after {
-  content: 'Studio';
+/* span всередині логотипа */
+.footer-logo span {
   color: #f4f4fd;
-  margin-left: 4px;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
+/* Параграф у футері (перевикористовуємо клас, наприклад, footer-text) */
 .footer-text {
-  color: #f4f4fd;               /* С – 11 */
-  max-width: 264px;
-  line-height: 1.5;             /* С – 10 */
+  line-height: 1.5;
+  color: var(--footer-text-color, #f4f4fd);
+  letter-spacing: 0.02em;
+  max-width: 600px;
   margin: 0 auto;
+  font-size: 16px; /* за потреби */
 }
