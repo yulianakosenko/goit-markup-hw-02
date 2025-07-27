@@ -1,4 +1,4 @@
- /* --- Базові стилі --- */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -23,11 +23,11 @@ a {
   color: inherit;          
 }
 
-img {
-  max-width: 100%;
-}
+/*img {
+  /*max-width: 100%;
+}*/
 
-/* --- Хедер --- */
+
 .header {
   background-color: #ffffff;  
 }
@@ -44,7 +44,7 @@ img {
   /
 }
 .logo-accent {
-  color: #2e2f42; /* Темний для "Studio" */
+  color: #2e2f42; 
 }
 
 
@@ -52,8 +52,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
-  font-weight: 500;
-  
+  font-weight: 500; 
 }
 
 .nav-link:hover,
@@ -83,7 +82,7 @@ img {
   color: #404bbf;
 }
 
-/* --- Hero секція --- */
+
 .hero {
   background-color: #2e2f42;
   text-align: center;
@@ -117,7 +116,7 @@ img {
  background-color: #404BBF; 
 }
 
-/* --- Особливості (features) --- */
+
 
 .features-title {
   font-size: 36px; 
@@ -153,7 +152,7 @@ img {
   margin: 0;
 }
 
-/* --- Команда (team) --- */
+
 .team {
   background-color: #f4f4fd;
 }
@@ -169,13 +168,12 @@ img {
   margin-bottom: 72px;
 }
 
-/* Список */
 .team-list {
   list-style: none;
   margin: 0;
 }
 
-/* Пункти списку */
+
 .team-item {
   background-color: #ffffff;
   text-align: center;
@@ -200,7 +198,7 @@ img {
   margin: 0;
 }
 
-/* --- Портфоліо --- */
+
 .portfolio {
   background-color: #ffffff; 
 }
@@ -226,9 +224,9 @@ img {
   overflow: hidden;
 }
 
-.portfolio-image {
+/*.portfolio-image {
   display: block;
-}
+}*/
 
 
 .portfolio-name {
@@ -249,7 +247,7 @@ img {
   margin: 0 0 16px 16px;
 }
 
-/* --- Футер --- */
+
 .footer {
   background-color: #2e2f42;
   text-align: center;
@@ -277,7 +275,7 @@ img {
   line-height: 1.5;
   color: var(--footer-text-color, #f4f4fd);
   letter-spacing: 0.02em;
-  max-width: 600px;
+  /*max-width: 600px;*/
   margin: 0 auto;
   font-size: 16px;
 }
