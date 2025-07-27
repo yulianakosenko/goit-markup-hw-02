@@ -1,46 +1,37 @@
-/* ======== Common styles ======== */
+ /* --- Базові стилі --- */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: #434455;
   background-color: #ffffff;
+  font-size: 16px;          
+  line-height: 1.5;        
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: inherit;          
 }
 
-ul,
-ol {
-  list-style: none;
+img {
+  max-width: 100%;
 }
 
-/* ======== Header styles ======== */
-/* ======== Header ======== */
+/* --- Хедер --- */
 .header {
-  /* Заборонені властивості */
-  /* position: relative; */
-  /* width: 1440px; */
-  /* height: 72px; */
-  /* left: 0px; */
-  /* top: 0px; */
-  /* box-sizing: border-box; */
-  /*border-bottom: 1px solid #e7e9fc;   */
-  background: #fff;
+  background-color: #ffffff;  
 }
 
-/* Навігація */
-.nav {
-  /* display: flex; */
-  /* align-items: center; */
-  /* padding: 24px 156px; */
-  /* flex-direction: row; */
-  /* gap: 76px; */
-  /* flex-grow: 0; */
-  /* order: 0; */
-  /* align-self: stretch; */
-}
-
-/* ======== Logo ======== */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -48,89 +39,82 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: #4d5ae5; 
   text-decoration: none;
+  /
 }
-
 .logo-accent {
-  color: #2e2f42; /* Зміна кольору частини логотипу */
+  color: #2e2f42; /* Темний для "Studio" */
 }
 
-/* ======== Navigation Links ======== */
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* display: flex; */
-  /* gap: 40px; */
-}
 
 .nav-link {
+  letter-spacing: 0.02em;
   color: #2e2f42;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5; /* Визначення простору між рядками */
-  letter-spacing: 0.02em; /* Визначення відступів між літерами */
   text-decoration: none;
+  font-weight: 500;
+  
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #404bbf; /* Зміна кольору при ховері і фокусі */
+  color: #404bbf;
 }
 
-/* ======== Address (Контактна інформація) ======== */
-.address {
-  font-style: normal; /* Прибирання курсиву */
+.current {
+  color: #404bbf;
 }
 
-.address-link {
-  color: #434455; /* Колір шрифту */
-  line-height: 1.5; /* Простір між рядками */
-  letter-spacing: 0.02em; /* Відступ між літерами */
+.contacts {
+  font-style: normal;
+}
+
+.contact-link {
+  letter-spacing: 0.02em;
+  color: #434455;
   text-decoration: none;
 }
 
-.address-link:hover,
-.address-link:focus {
-  color: #404bbf; /* Зміна кольору при наведенні або кліку */
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
-/* ======== Hero section styles ======== */
+
+/* --- Hero секція --- */
 .hero {
-  background: #2e2f42;
+  background-color: #2e2f42;
+  text-align: center;
 }
 
 .hero-title {
+  margin: 0 auto 48px;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #ffffff;
 }
 
 .hero-button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
   cursor: pointer;
+  transition: color 250ms ease; 
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
+ background-color: #404BBF; 
 }
 
-/* ======== Features section styles ======== */
-
-
-.features-section {
-  /* padding: 120px 0; */
-}
+/* --- Особливості (features) --- */
 
 .features-title {
   font-size: 36px; 
@@ -143,17 +127,9 @@ ol {
 
 .features-list {
   list-style: none;
-  padding: 0;
   margin: 0;
-  /* display: flex; */
-  /* gap: 24px; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
 }
 
-.features-item {
-  /* flex-basis: calc((100% - 72px) / 4); */
-}
 
 .feature-title {
   font-weight: 500;      
@@ -174,11 +150,9 @@ ol {
   margin: 0;
 }
 
-
-/* ======== Team section styles ======== */
+/* --- Команда (team) --- */
 .team {
   background-color: #f4f4fd;
-  /* padding: 120px 0; */
 }
 
 .team-title {
@@ -195,25 +169,14 @@ ol {
 /* Список */
 .team-list {
   list-style: none;
-  padding: 0;
   margin: 0;
-  /* display: flex; */
-  /* gap: 24px; */
-  /* justify-content: center; */
 }
 
 /* Пункти списку */
 .team-item {
   background-color: #ffffff;
-  /* border-radius: 4px; */
-  /* box-shadow:
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08); */
   text-align: center;
   overflow: hidden;
-  /* padding-bottom: 20px; */
-  /* width: 264px; */
 }
 
 .team-name {
@@ -234,13 +197,9 @@ ol {
   margin: 0;
 }
 
-/* ======== Portfolio section styles ======== */
-
-
 /* --- Портфоліо --- */
 .portfolio {
   background-color: #ffffff; 
-  /* padding: 120px 0; */
 }
 
 .portfolio-title {
@@ -255,28 +214,19 @@ ol {
 
 .portfolio-list {
   list-style: none;
-  padding: 0;
   margin: 0;
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* gap: 24px; */
-  /* justify-items: center; */
 }
 
 .portfolio-item {
   background-color: #ffffff;
   border: 1px solid #e7e9fc;
-  /* border-radius: 4px; */
   overflow: hidden;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
-.portfolio-item img {
-  height: auto;
-  /* width: 360px; */
-  /* display: block; */
+.portfolio-image {
+  display: block;
 }
+
 
 .portfolio-name {
   font-weight: 500;
@@ -300,7 +250,6 @@ ol {
 .footer {
   background-color: #2e2f42;
   text-align: center;
-  /* padding: 40px 0; */
 }
 
 .logo {
@@ -312,8 +261,6 @@ ol {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  /* display: inline-block; */
-  /* margin-bottom: 16px; */
 }
 
 .footer-logo-accent {
